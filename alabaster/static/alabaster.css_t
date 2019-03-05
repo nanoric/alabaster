@@ -57,7 +57,7 @@
 
 /* -- page layout ----------------------------------------------------------- */
 
-body {
+#doc_container body {
     font-family: {{ theme_font_family }};
     font-size: {{ theme_font_size }};
     background-color: {{ theme_base_bg }};
@@ -67,41 +67,41 @@ body {
 }
 
 
-div.document {
+#doc_container div.document {
     width: {{ theme_page_width }};
     margin: 30px auto 0 auto;
 }
 
-div.documentwrapper {
+#doc_container div.documentwrapper {
     float: left;
     width: 100%;
 }
 
-div.bodywrapper {
+#doc_container div.bodywrapper {
     margin: 0 0 0 {{ theme_sidebar_width }};
 }
 
-div.sphinxsidebar {
+#doc_container div.sphinxsidebar {
     width: {{ theme_sidebar_width }};
     font-size: 14px;
     line-height: 1.5;
 }
 
-hr {
+#doc_container hr {
     border: 1px solid {{ theme_hr_border }};
 }
 
-div.body {
+#doc_container div.body {
     background-color: {{ theme_body_bg  }};
     color: {{ theme_body_text }};
     padding: 0 30px 0 30px;
 }
 
-div.body > .section {
+#doc_container div.body > .section {
     text-align: {{ theme_body_text_align }};
 }
 
-div.footer {
+#doc_container div.footer {
     width: {{ theme_page_width }};
     margin: 20px auto 30px auto;
     font-size: 14px;
@@ -109,58 +109,58 @@ div.footer {
     text-align: right;
 }
 
-div.footer a {
+#doc_container div.footer a {
     color: {{ theme_footer_text }};
 }
 
-p.caption {
+#doc_container p.caption {
     font-family: {{ theme_caption_font_family }};
     font-size: {{ theme_caption_font_size }};
 }
 
 {% if theme_show_related|lower == 'false' %}
-div.relations {
+#doc_container div.relations {
     display: none;
 }
 {% endif %}
 
-div.sphinxsidebar a {
+#doc_container div.sphinxsidebar a {
     color: {{ theme_sidebar_link }};
     text-decoration: none;
     border-bottom: 1px dotted {{ theme_sidebar_link_underscore }};
 }
 
-div.sphinxsidebar a:hover {
+#doc_container div.sphinxsidebar a:hover {
     border-bottom: 1px solid {{ theme_sidebar_link_underscore }};
 }
 
-div.sphinxsidebarwrapper {
+#doc_container div.sphinxsidebarwrapper {
     padding: 18px 10px;
 }
 
-div.sphinxsidebarwrapper p.logo {
+#doc_container div.sphinxsidebarwrapper p.logo {
     padding: 0;
     margin: -10px 0 0 0px;
     text-align: center;
 }
 
-div.sphinxsidebarwrapper h1.logo {
+#doc_container div.sphinxsidebarwrapper h1.logo {
     margin-top: -10px;
     text-align: center;
     margin-bottom: 5px;
     text-align: {{ theme_logo_text_align }};
 }
 
-div.sphinxsidebarwrapper h1.logo-name {
+#doc_container div.sphinxsidebarwrapper h1.logo-name {
     margin-top: 0px;
 }
 
-div.sphinxsidebarwrapper p.blurb {
+#doc_container div.sphinxsidebarwrapper p.blurb {
     margin-top: 0;
     font-style: {{ theme_description_font_style }};
 }
 
-div.sphinxsidebar h3,
+#doc_container div.sphinxsidebar h3,
 div.sphinxsidebar h4 {
     font-family: {{ theme_head_font_family }};
     color: {{ theme_sidebar_header }};
@@ -170,47 +170,47 @@ div.sphinxsidebar h4 {
     padding: 0;
 }
 
-div.sphinxsidebar h4 {
+#doc_container div.sphinxsidebar h4 {
     font-size: 20px;
 }
 
-div.sphinxsidebar h3 a {
+#doc_container div.sphinxsidebar h3 a {
     color: {{ theme_sidebar_link }};
 }
 
-div.sphinxsidebar p.logo a,
-div.sphinxsidebar h3 a,
-div.sphinxsidebar p.logo a:hover,
-div.sphinxsidebar h3 a:hover {
+#doc_container div.sphinxsidebar p.logo a,
+#doc_container div.sphinxsidebar h3 a,
+#doc_container div.sphinxsidebar p.logo a:hover,
+#doc_container div.sphinxsidebar h3 a:hover {
     border: none;
 }
 
-div.sphinxsidebar p {
+#doc_container div.sphinxsidebar p {
     color: {{ theme_sidebar_text }};
     margin: 10px 0;
 }
 
-div.sphinxsidebar ul {
+#doc_container div.sphinxsidebar ul {
     margin: 10px 0;
     padding: 0;
     color: {{ theme_sidebar_list }};
 }
 
-div.sphinxsidebar ul li.toctree-l1 > a {
+#doc_container div.sphinxsidebar ul li.toctree-l1 > a {
     font-size: 120%;
 }
 
-div.sphinxsidebar ul li.toctree-l2 > a {
+#doc_container div.sphinxsidebar ul li.toctree-l2 > a {
     font-size: 110%;
 }
 
-div.sphinxsidebar input {
+#doc_container div.sphinxsidebar input {
     border: 1px solid {{ theme_sidebar_search_button }};
     font-family: {{ theme_font_family }};
     font-size: 1em;
 }
 
-div.sphinxsidebar hr {
+#doc_container div.sphinxsidebar hr {
     border: none;
     height: 1px;
     color: {{ theme_sidebar_hr }};
@@ -221,78 +221,78 @@ div.sphinxsidebar hr {
     width: 50%;
 }
 
-div.sphinxsidebar .badge {
+#doc_container div.sphinxsidebar .badge {
     border-bottom: none;
 }
 
-div.sphinxsidebar .badge:hover {
+#doc_container div.sphinxsidebar .badge:hover {
     border-bottom: none;
 }
 
 /* To address an issue with donation coming after search */
-div.sphinxsidebar h3.donation {
+#doc_container div.sphinxsidebar h3.donation {
     margin-top: 10px;
 }
 
 /* -- body styles ----------------------------------------------------------- */
 
-a {
+#doc_container a {
     color: {{ theme_link }};
     text-decoration: underline;
 }
 
-a:hover {
+#doc_container a:hover {
     color: {{ theme_link_hover }};
     text-decoration: underline;
 }
 
-div.body h1,
-div.body h2,
-div.body h3,
-div.body h4,
-div.body h5,
-div.body h6 {
+#doc_container div.body h1,
+#doc_container div.body h2,
+#doc_container div.body h3,
+d#doc_container iv.body h4,
+#doc_container div.body h5,
+#doc_container div.body h6 {
     font-family: {{ theme_head_font_family }};
     font-weight: normal;
     margin: 30px 0px 10px 0px;
     padding: 0;
 }
 
-div.body h1 { margin-top: 0; padding-top: 0; font-size: 240%; }
-div.body h2 { font-size: 180%; }
-div.body h3 { font-size: 150%; }
-div.body h4 { font-size: 130%; }
-div.body h5 { font-size: 100%; }
-div.body h6 { font-size: 100%; }
+#doc_container div.body h1 { margin-top: 0; padding-top: 0; font-size: 240%; }
+#doc_container div.body h2 { font-size: 180%; }
+#doc_container div.body h3 { font-size: 150%; }
+#doc_container div.body h4 { font-size: 130%; }
+#doc_container div.body h5 { font-size: 100%; }
+#doc_container div.body h6 { font-size: 100%; }
 
-a.headerlink {
+#doc_container a.headerlink {
     color: {{ theme_anchor }};
     padding: 0 4px;
     text-decoration: none;
 }
 
-a.headerlink:hover {
+#doc_container a.headerlink:hover {
     color: {{ theme_anchor_hover_fg }};
     background: {{ theme_anchor_hover_bg }};
 }
 
-div.body p, div.body dd, div.body li {
+#doc_container div.body p, div.body dd, div.body li {
     line-height: 1.4em;
 }
 
-div.admonition {
+#doc_container div.admonition {
     margin: 20px 0px;
     padding: 10px 30px;
     background-color: {{ theme_admonition_bg }};
     border: 1px solid {{ theme_admonition_border }};
 }
 
-div.admonition tt.xref, div.admonition code.xref, div.admonition a tt {
+#doc_container div.admonition tt.xref, div.admonition code.xref, div.admonition a tt {
     background-color: {{ theme_admonition_xref_bg }};
     border-bottom: 1px solid {{ theme_admonition_xref_border }};
 }
 
-div.admonition p.admonition-title {
+#doc_container div.admonition p.admonition-title {
     font-family: {{ theme_head_font_family }};
     font-weight: normal;
     font-size: 24px;
@@ -301,24 +301,24 @@ div.admonition p.admonition-title {
     line-height: 1;
 }
 
-div.admonition p.last {
+#doc_container div.admonition p.last {
     margin-bottom: 0;
 }
 
-div.highlight {
+#doc_container div.highlight {
     background-color: {{ theme_code_highlight_bg }};
 }
 
-dt:target, .highlight {
+#doc_container dt:target, .highlight {
     background: {{ theme_highlight_bg }};
 }
 
-div.warning {
+#doc_container div.warning {
     background-color: {{ theme_warn_bg }};
     border: 1px solid {{ theme_warn_border }};
 }
 
-div.danger {
+#doc_container div.danger {
     background-color: {{ theme_danger_bg }};
     border: 1px solid {{ theme_danger_border }};
     -moz-box-shadow: 2px 2px 4px {{ theme_danger_shadow }};
@@ -326,7 +326,7 @@ div.danger {
     box-shadow: 2px 2px 4px {{ theme_danger_shadow }};
 }
 
-div.error {
+#doc_container div.error {
     background-color: {{ theme_error_bg }};
     border: 1px solid {{ theme_error_border }};
     -moz-box-shadow: 2px 2px 4px {{ theme_error_shadow }};
@@ -334,102 +334,102 @@ div.error {
     box-shadow: 2px 2px 4px {{ theme_error_shadow }};
 }
 
-div.caution {
+#doc_container div.caution {
     background-color: {{ theme_caution_bg }};
     border: 1px solid {{ theme_caution_border }};
 }
 
-div.attention {
+#doc_container div.attention {
     background-color: {{ theme_attention_bg }};
     border: 1px solid {{ theme_attention_border }};
 }
 
-div.important {
+#doc_container div.important {
     background-color: {{ theme_important_bg }};
     border: 1px solid {{ theme_important_border }};
 }
 
-div.note {
+#doc_container div.note {
     background-color: {{ theme_note_bg }};
     border: 1px solid {{ theme_note_border }};
 }
 
-div.tip {
+#doc_container div.tip {
     background-color: {{ theme_tip_bg }};
     border: 1px solid {{ theme_tip_border }};
 }
 
-div.hint {
+#doc_container div.hint {
     background-color: {{ theme_hint_bg }};
     border: 1px solid {{ theme_hint_border }};
 }
 
-div.seealso {
+#doc_container div.seealso {
     background-color: {{ theme_seealso_bg }};
     border: 1px solid {{ theme_seealso_border }};
 }
 
-div.topic {
+#doc_container div.topic {
     background-color: {{ theme_topic_bg }};
 }
 
-p.admonition-title {
+#doc_container p.admonition-title {
     display: inline;
 }
 
-p.admonition-title:after {
+#doc_container p.admonition-title:after {
     content: ":";
 }
 
-pre, tt, code {
+#doc_container pre, tt, code {
     font-family: {{theme_code_font_family}};
     font-size: {{ theme_code_font_size }};
 }
 
-.hll {
+#doc_container .hll {
     background-color: {{theme_code_highlight}};
     margin: 0 -12px;
     padding: 0 12px;
     display: block;
 }
 
-img.screenshot {
+#doc_container img.screenshot {
 }
 
-tt.descname, tt.descclassname, code.descname, code.descclassname {
+#doc_container tt.descname, tt.descclassname, code.descname, code.descclassname {
     font-size: 0.95em;
 }
 
-tt.descname, code.descname {
+#doc_container tt.descname, code.descname {
     padding-right: 0.08em;
 }
 
-img.screenshot {
+#doc_container img.screenshot {
     -moz-box-shadow: 2px 2px 4px {{ theme_shadow }};
     -webkit-box-shadow: 2px 2px 4px {{ theme_shadow }};
     box-shadow: 2px 2px 4px {{ theme_shadow }};
 }
 
-table.docutils {
+#doc_container table.docutils {
     border: 1px solid {{ theme_table_border }};
     -moz-box-shadow: 2px 2px 4px {{ theme_shadow }};
     -webkit-box-shadow: 2px 2px 4px {{ theme_shadow }};
     box-shadow: 2px 2px 4px {{ theme_shadow }};
 }
 
-table.docutils td, table.docutils th {
+#doc_container table.docutils td, table.docutils th {
     border: 1px solid {{ theme_table_border }};
     padding: 0.25em 0.7em;
 }
 
-table.field-list, table.footnote {
+#doc_container table.field-list, table.footnote {
     border: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
 
-table.footnote {
+#doc_container table.footnote {
     margin: 15px 0;
     width: 100%;
     border: 1px solid {{ theme_footnote_border }};
@@ -437,170 +437,170 @@ table.footnote {
     font-size: 0.9em;
 }
 
-table.footnote + table.footnote {
+#doc_container table.footnote + table.footnote {
     margin-top: -15px;
     border-top: none;
 }
 
-table.field-list th {
+#doc_container table.field-list th {
     padding: 0 0.8em 0 0;
 }
 
-table.field-list td {
+#doc_container table.field-list td {
     padding: 0;
 }
 
-table.field-list p {
+#doc_container table.field-list p {
     margin-bottom: 0.8em;
 }
 
 /* Cloned from
  * https://github.com/sphinx-doc/sphinx/commit/ef60dbfce09286b20b7385333d63a60321784e68
  */
-.field-name {
+#doc_container .field-name {
     -moz-hyphens: manual;
     -ms-hyphens: manual;
     -webkit-hyphens: manual;
     hyphens: manual;
 }
 
-table.footnote td.label {
+#doc_container table.footnote td.label {
     width: .1px;
     padding: 0.3em 0 0.3em 0.5em;
 }
 
-table.footnote td {
+#doc_container table.footnote td {
     padding: 0.3em 0.5em;
 }
 
-dl {
+#doc_container dl {
     margin: 0;
     padding: 0;
 }
 
-dl dd {
+#doc_container dl dd {
     margin-left: 30px;
 }
 
-blockquote {
+#doc_container blockquote {
     margin: 0 0 0 30px;
     padding: 0;
 }
 
-ul, ol {
+#doc_container ul, ol {
     /* Matches the 30px from the narrow-screen "li > ul" selector below */
     margin: 10px 0 10px 30px;
     padding: 0;
 }
 
-pre {
+#doc_container pre {
     background: {{ theme_pre_bg }};
     padding: 7px 30px;
     margin: 15px 0px;
     line-height: 1.3em;
 }
 
-div.viewcode-block:target {
+#doc_container div.viewcode-block:target {
     background: {{ theme_viewcode_target_bg }};
 }
 
-dl pre, blockquote pre, li pre {
+#doc_container dl pre, blockquote pre, li pre {
     margin-left: 0;
     padding-left: 30px;
 }
 
-tt, code {
+#doc_container tt, code {
     background-color: {{ theme_code_bg }};
     color: {{ theme_code_text }};
     /* padding: 1px 2px; */
 }
 
-tt.xref, code.xref, a tt {
+#doc_container tt.xref, code.xref, a tt {
     background-color: {{ theme_xref_bg }};
     border-bottom: 1px solid {{ theme_xref_border }};
 }
 
-a.reference {
+#doc_container a.reference {
     text-decoration: none;
     border-bottom: 1px dotted {{ theme_link }};
 }
 
 /* Don't put an underline on images */
-a.image-reference, a.image-reference:hover {
+#doc_container a.image-reference, a.image-reference:hover {
     border-bottom: none;
 }
 
-a.reference:hover {
+#doc_container a.reference:hover {
     border-bottom: 1px solid {{ theme_link_hover }};
 }
 
-a.footnote-reference {
+#doc_container a.footnote-reference {
     text-decoration: none;
     font-size: 0.7em;
     vertical-align: top;
     border-bottom: 1px dotted {{ theme_link }};
 }
 
-a.footnote-reference:hover {
+#doc_container a.footnote-reference:hover {
     border-bottom: 1px solid {{ theme_link_hover }};
 }
 
-a:hover tt, a:hover code {
+#doc_container a:hover tt, a:hover code {
     background: {{ theme_code_hover }};
 }
 
 
 @media screen and (max-width: 870px) {
 
-    div.sphinxsidebar {
+    #doc_container div.sphinxsidebar {
     	display: none;
     }
 
-    div.document {
+    #doc_container div.document {
        width: 100%;
 
     }
 
-    div.documentwrapper {
+    #doc_container div.documentwrapper {
     	margin-left: 0;
     	margin-top: 0;
     	margin-right: 0;
     	margin-bottom: 0;
     }
 
-    div.bodywrapper {
+    #doc_container div.bodywrapper {
     	margin-top: 0;
     	margin-right: 0;
     	margin-bottom: 0;
     	margin-left: 0;
     }
 
-    ul {
+    #doc_container ul {
     	margin-left: 0;
     }
 
-	li > ul {
+	#doc_container li > ul {
         /* Matches the 30px from the "ul, ol" selector above */
 		margin-left: 30px;
 	}
 
-    .document {
+    #doc_container .document {
     	width: auto;
     }
 
-    .footer {
+    #doc_container .footer {
     	width: auto;
     }
 
-    .bodywrapper {
+    #doc_container .bodywrapper {
     	margin: 0;
     }
 
-    .footer {
+    #doc_container .footer {
     	width: auto;
     }
 
-    .github {
+    #doc_container .github {
         display: none;
     }
 
@@ -612,17 +612,17 @@ a:hover tt, a:hover code {
 
 @media screen and (max-width: 875px) {
 
-    body {
+    #doc_container body {
         margin: 0;
         padding: 20px 30px;
     }
 
-    div.documentwrapper {
+    #doc_container div.documentwrapper {
         float: none;
         background: {{ theme_base_bg }};
     }
 
-    div.sphinxsidebar {
+    #doc_container div.sphinxsidebar {
         display: block;
         float: none;
         width: 102.5%;
@@ -636,61 +636,63 @@ a:hover tt, a:hover code {
         color: {{ theme_narrow_sidebar_fg }};
     }
 
-    div.sphinxsidebar h3, div.sphinxsidebar h4, div.sphinxsidebar p,
-    div.sphinxsidebar h3 a {
+    #doc_container div.sphinxsidebar h3,
+    #doc_container div.sphinxsidebar h4,
+    #doc_container div.sphinxsidebar p,
+    #doc_container div.sphinxsidebar h3 a {
         color: {{ theme_base_bg }};
     }
 
-    div.sphinxsidebar a {
+    #doc_container div.sphinxsidebar a {
         color: {{ theme_narrow_sidebar_link }};
     }
 
-    div.sphinxsidebar p.logo {
+    #doc_container div.sphinxsidebar p.logo {
         display: none;
     }
 
-    div.document {
+    #doc_container div.document {
         width: 100%;
         margin: 0;
     }
 
-    div.footer {
+    #doc_container div.footer {
         display: none;
     }
 
-    div.bodywrapper {
+    #doc_container div.bodywrapper {
         margin: 0;
     }
 
-    div.body {
+    #doc_container div.body {
         min-height: 0;
         padding: 0;
     }
 
-    .rtd_doc_footer {
+    #doc_container .rtd_doc_footer {
         display: none;
     }
 
-    .document {
+    #doc_container .document {
         width: auto;
     }
 
-    .footer {
+    #doc_container .footer {
         width: auto;
     }
 
-    .footer {
+    #doc_container .footer {
         width: auto;
     }
 
-    .github {
+    #doc_container .github {
         display: none;
     }
 }
 
 {%- if theme_fixed_sidebar|lower == 'true' %}
 @media screen and (min-width: 876px) {
-    div.sphinxsidebar {
+    #doc_container div.sphinxsidebar {
         position: fixed;
         margin-left: 0;
     }
@@ -700,7 +702,7 @@ a:hover tt, a:hover code {
 
 /* misc. */
 
-.revsys-inline {
+#doc_container .revsys-inline {
     display: none!important;
 }
 
@@ -708,12 +710,12 @@ a:hover tt, a:hover code {
  * pages. Without this, docutils' magical list fuckery causes inconsistent
  * formatting between different release sub-lists.
  */
-div#changelog > div.section > ul > li > p:only-child {
+#doc_container div#changelog > div.section > ul > li > p:only-child {
     margin-bottom: 0;
 }
 
 /* Hide fugly table cell borders in ..bibliography:: directive output */
-table.docutils.citation, table.docutils.citation td, table.docutils.citation th {
+#doc_container table.docutils.citation, table.docutils.citation td, table.docutils.citation th {
   border: none;
   /* Below needed in some edge cases; if not applied, bottom shadows appear */
   -moz-box-shadow: none;
@@ -724,40 +726,40 @@ table.docutils.citation, table.docutils.citation td, table.docutils.citation th 
 
 /* relbar */
 
-.related {
+#doc_container .related {
     line-height: 30px;
     width: 100%;
     font-size: 0.9rem;
 }
 
-.related.top {
+#doc_container .related.top {
     border-bottom: 1px solid {{ theme_relbar_border }};
     margin-bottom: 20px;
 }
 
-.related.bottom {
+#doc_container .related.bottom {
     border-top: 1px solid {{ theme_relbar_border }};
 }
 
-.related ul {
+#doc_container .related ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.related li {
+#doc_container .related li {
     display: inline;
 }
 
-nav#rellinks {
+#doc_container nav#rellinks {
     float: right;
 }
 
-nav#rellinks li+li:before {
+#doc_container nav#rellinks li+li:before {
     content: "|";
 }
 
-nav#breadcrumbs li+li:before {
+#doc_container nav#breadcrumbs li+li:before {
     content: "\00BB";
 }
 
